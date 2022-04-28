@@ -1,0 +1,18 @@
+#ifndef GESTION_H // si GESTION_H n'est pas défini
+#define GESTION_H // alors on le définit
+
+extern void creerBib(bib *b);
+extern void ajouterCategorie(struct noeud_v **tete, struct bib nh);
+extern void creerElement(element *elem);
+extern void insererLivre(struct noeud_h **tete, struct element ne);// ne: noeud element
+extern void AjouterLivreCategorie(noeud_v *tete_v, char *categD);
+extern void AjouterLivreCategorie1(noeud_v *tete_v, char *categD)
+extern void afficherCategorieDonnee(noeud_v *tete, char *categD);
+extern void afficherLivre(noeud_v *tete_v, char *categD );
+extern void affiche_seulement_categorie(noeud_v *tete);
+extern void afficheBib(noeud_v *tete_v);
+extern int nb_tot_livres(noeud_v *tete);
+extern void supprimer_categ(noeud_v **tete, char *categD);
+extern int existe(noeud_v * tete_v, char *categD)
+
+#endif // fin si
